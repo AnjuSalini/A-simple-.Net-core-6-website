@@ -1,0 +1,119 @@
+﻿<div class="container">
+     <br />
+    <br />
+    <div class="row">
+        
+        <h1>Create database using Entity Framework</h1>
+        <h4> Here we are using code first approach. There are Database first approach and Model first approach </h4>
+        <div class="bg-success">
+        <h4>Step 1: After creating the model, we need to set connection string inside Appsettings.json</h4>
+        <h4> We need to set server name and database name</h4>
+        </div>
+        
+        <img src="/images/appsetting.jpg" />
+       </div>
+        <br />
+    <br />
+       <div class="row">
+        <div class="bg-success">
+         <h4>Step 2: Create a Data folder by right clicking on project name from solution explorer </h4>
+      </div>
+         <img src="/images/datafolder.jpg" />
+         </div>
+          <br />
+    <br />
+         <div class="row">
+         <div class="bg-success">
+         <h4>Step 3:Add necessary packages </h4>
+       </div>
+         <img src="/images/installpackages.jpg" />
+         
+          <img src="/images/installedpackages2.jpg" /></div>
+           <br />
+    <br />
+          <div class="row">
+
+          <div class="bg-success">
+          <h4>Step 4: Create a DbContext class inside Data folder</h4>
+      </div>
+         <img src="/images/contextclass1.jpg" /></div>
+          <br />
+    <br />
+         <div class="row">
+         <div class="bg-success">
+        <h4>Step 5:Name the class as StudentDbContext</h4>
+     </div>
+         <img src="/images/dbcontext2.jpg" /></div>
+          <br />
+    <br />
+         <div class="row">
+         <div class="bg-success">
+         <h4>Step 6: The created StudentDbContext Class is inherited from DbContext Class</h4>
+        <h4>We need to create a constructor for StudentDbContext</h4>
+        <h4>A shortcut for creating constructor is to type ctor and press tab key twice</h4>
+        <h4>Inside the constructor write DbContextOptions as parameter with options as object and pass it to the base class</h4>
+        <h4>Then create a DbSet of Product model class and the name 'products' given will be the table inside the database</h4>
+        </div>
+         <img src="/images/dbcontextcodecompleted.jpg" /></div>
+          <br />
+    <br />
+         <div class="row">
+         <div class="bg-success">
+         <h4>Step 7:Open Program.cs and register the StudentDbContext class inside it so that the database will be accessible throughout the entire application.</h4>
+     </div>
+         <img src="/images/programcs.jpg" /></div>
+     <br />
+    <br />
+         <div class="row">
+         <div class="bg-success">
+         <h4>Step 8:Package Manager Console</h4></div>
+         <img src="/images/packageconsole.jpg" /></div>
+          <br />
+    <br />
+         <div class="row">
+         <div class="bg-success">
+         <h4>Step 9. Add migration</h4>
+         <h4>We don't need to write sql queries for creating database and table. Entity framework is smart enough for doing that for us. In order to generate scripts for creating Database and tables we use migration</h4>
+    <h4>Syntax </h4>
+    <h4>add-migration MigrationName</h4>
+    </div>
+   
+    <img src="/images/migration2.jpg" /></div>
+    <br />
+    <br />
+    <div class="row">
+    <div class="bg-success">
+     <h4>Step 7. Update Database</h4>
+         <h4>In order to push the Database and Table based on the created scripts we need to use update-database command  </h4>
+    <h4>Syntax </h4>
+    <h4>update-database</h4></div>
+    <img src="/images/updatedatabase.jpg" />
+    </div>
+    <br />
+    <br />
+     <div class="row">
+    <div class="bg-success">
+     <h4>Step 7.Server Object Explorer</h4>
+         <h4>Search for SQL server object explorer  </h4>
+    </div>
+    <img src="/images/searchserverobjectexplorer.jpg" />
+    
+    </div>
+    <br />
+    <br />
+     <div class="row">
+    <div class="bg-success">
+     <h4>Step 7.Database and Tables Created</h4>
+         <h4>Open local Server   </h4>
+    </div>
+    <img src="/images/dbandtableshowingfromserverobj.jpg" />
+    
+    </div>
+     </div>
+
+
+
+
+
+
+

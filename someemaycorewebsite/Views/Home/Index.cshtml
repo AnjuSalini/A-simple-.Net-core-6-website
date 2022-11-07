@@ -1,0 +1,220 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <br />
+     <br />
+      <br />
+      
+    <h1 class="display-4"><u>Welcome To Easy Coding Tutorials</u></h1>
+    <p>This website is built with .Net Core 6 MVC </p>
+    <br/>
+   @* <h3>Learn about <a href="https://www.youtube.com/channel/UCA_cau_audBhTarCUSPyAgA">building Web apps</a>.</h3>*@
+    <br />
+     <br />
+      <br />
+       <br />
+       </div>
+   <div class="container">
+  <h2></h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/coree.jpg" alt=".NET" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/mvcc.jpg" alt="MVC" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="img/cccc.jpg" alt="C#" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br />
+<br />
+ <div id="about-section" >
+        <div class="container" >
+             <br />
+<br />
+<br />
+                    <h1 class="text-center"><u>.NET Core</u></h1>
+                    <br />
+<br />
+                    <h4>
+                        
+                      .NET Core is a free, open source(freely available and may be redistributed and modified) and cross-platform(to be used on different types of computers or with different software packages) framework developed by microsoft.
+                            
+                    </h4>
+             
+            </div>
+            <!-- ./ Main Heading-->
+            <hr />
+            <div class="row main-low-margin text-center">
+                <div class="col-md-3 col-sm-12" >
+                    <img class="img-circle" src="img/netcorep.jpg" alt="" height="250" width="250">
+                    
+                   
+                </div>
+             
+                <div class="col-md-7 col-sm-12 col-md-offset-1  text-justify" >
+                    <h3> Latest Version</h3>
+                    <p>
+                        .NET CORE 7 is the latest version available but it is in the preview mode
+                        .NET CORE 6 is the latest stable version available.
+
+                    </p>
+                    <p>
+                         In order to work with .NET CORE we need an IDE and MS-SQL database. For that we use Visual Studio 2022 and SQL SERVER 2019
+
+                    </p>
+                    <p>
+                         Visual Studio 2022 community edition is a free microsoft's IDE which we can download from microsoft's website.
+                          We can download SQL SERVER 2019 for free from microsoft's website and  we need
+                         SQL SERVER MANAGEMENT STUDIO which also we can download for free .
+
+
+                    </p>
+                </div>
+                <br />
+                <br />
+                <div class="col-md-12 col-sm-12 text-justify" >
+                    <h3> .NET CORE MVC</h3>
+                    <p>MVC stands for Model, View and Controller. </p>
+                      <p> What is a Model?</p>
+                      <p> It is a class which consist of all the properties required for a table in the database.
+                       The properties which we created in the Model class will be the fields of the table. For example ,
+                       we have the property called name or email in the model class which will represent the fields of the table such as name and email. 
+                       So we can say that a model class can be used to create a table in the database, store data in the database and retrieve data from database if needed.
+                       All model classes created are kept inside the Models folder</p>
+                      <p> What is a View?</p>
+                      <p> View is the user interface. It is the webpage of the website through which user can interact. 
+                          All Created views are stored inside the views folder</p>
+                       <p>What is a Controller?
+
+                    </p>
+                    <br />
+                    <br />
+                     <h4> .NET CORE RAZOR PAGES</h4>
+                    <p>
+                        
+                         We can create server side web applications using Razor Pages instead of using MVC. 
+                         Razor Page consist of a .cs file for each page. For example we we have a view called index is created. 
+                         Then we have Index.cs file also. This file is looks similar to code behind file of traditional ASP.NET Webforms but it's entirely rewritten.
+                    </p>
+                </div>
+            </div>
+              <!-- ./ Row Content-->
+
+                        
+                
+        </div>
+   <br />
+   <br />
+   
+  <div class="container" >
+            <div class="row main-top-margin text-center" >
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <h1><u>More Codes</u></h1>
+                    <br />
+                    <br />
+                    <h4>
+                       <strong>
+                       Learn HTML, CSS, SQL and much more
+                            </strong>
+                    </h4>
+                </div>
+            </div>
+             <!-- ./ Main Heading-->
+             <hr />
+            <div class="row main-low-margin"  style="background-color:lightgray;" >
+                  <div class="col-md-12 col-sm-12">
+          <ul class="pricing-table-main" >
+	<li class="col-md-4 col-sm-4" >
+		<h2>HTML</h2>
+		<br />
+        
+		<div class="main-features">
+			<p>HTML stands for HyperText Markup Language</p>
+            <p>HTML is the building block of a webpage</p>
+            <p>HTML consist of elements known as Tags</p>
+            <p>HTML is not case sensitive</p>
+            <p>HTML Starts With &lt;html&gt;Tag</p>
+            <p>HTML Ends With &lt;/html&gt; Tag</p>
+		</div>
+        <br />
+        <br />
+         <br />
+    <br />
+    <br />
+		<div class="footer">
+			<a asp-controller="home" asp-action="Html" class="btn btn-info btn-lg">More about HTML</a>
+		</div>
+	</li>
+	<li class="col-md-4 col-sm-4" >
+		<h2>CSS</h2>
+		<br />
+		<div class="main-features">
+			<p>CSS stands for Cascading Style Sheet</p>
+            <p>CSS is used for styling the HTML document</p>
+            <p>Different types of Style Sheets </p>
+            <p>Inline stylesheet</p>
+            <p>Internal stylesheet</p>
+            <p>External stylesheet</p></div>
+            <br /><br /> <br />
+    <br />
+    <br />
+            <div class="footer">
+			<a asp-controller="home" asp-action="CSS" class="btn btn-info btn-lg">More about CSS</a>
+		</div>
+	</li>
+	<li class="col-md-4 col-sm-4" >
+		<h2>SQL</h2>
+		<br />
+		<div class="main-features">
+			<p>SQL Stands for Structured Query Language</p>
+            <p>It is used for storing, modifying and retrieving data </p>
+            <p>We can write queries for creating database and tables </p>
+            <p>We can insert,delete and alter data</p>
+            <p>We can retreive data from multiple tables</p>
+            <p>We can set permissions on tables</p>
+		</div>
+        <br /><br /> <br />
+    <br />
+    <br />
+		<div class="footer">
+			<a asp-controller="home" asp-action="Mssql" class="btn btn-info btn-lg">More about SQL</a>
+		</div>
+	</li>
+	
+</ul>
+      </div>
+
+               
+            </div>
+            <!-- ./ Row Content-->
+         
+        </div>
+

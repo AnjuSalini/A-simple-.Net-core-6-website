@@ -1,0 +1,120 @@
+﻿<div class="container">
+    <div class="row">
+<h1>SQL</h1>
+
+            <p>SQL Stands for Structured Query Language</p>
+            <p>It is used for storing, modifying and retrieving data </p>
+            <p>We can write queries for creating database and tables </p>
+            <p>We can insert,delete and alter data</p>
+            <p>We can retreive data from multiple tables</p>
+            <p>We can set permissions on tables</p>
+            <br />
+            <br />
+            <h3>Query For Creating Database</h3>
+            <br />
+            <div class="bg-success">
+            <p>create database DatabaseName;</p>
+            <p> Example: create database Firstdb; </p>
+            <br />
+            <br />
+            </div>
+            <h3>CREATE</h3>
+            <h3>Query For Creating Table</h3>
+            <br />
+            <div class="bg-success">
+            <p>create Table TableName(field1 datatype,field2 datatype);</p>
+            <p> Example: create table Student(id int primarykey, name varchar(50),age varchar(50)); </p>
+            </div>
+            <h3>INSERT</h3>
+             <h3>Query For Inserting values into Table</h3>
+            <br />
+            <div class="bg-success">
+            <p>insert into TableName values(value1,value2);</p>
+            <p> Example: insert into Student values(1,'Anu',25); </p>
+             <p> Example: insert into Student values(1,'Anju',27); </p>
+            </div>
+            <h3>UPDATE</h3>
+            <h3>Query For Selecting entire rows and columns of Table</h3>
+            <br />
+            <div class="bg-success">
+            <p>select * from TableName;</p>
+            <p> Example: select * from Student; </p>
+            </div>
+            <h3>Query For Selecting rows from Table</h3>
+            <br />
+            <div class="bg-success">
+            <p>select * from TableName where condition;</p>
+            <p> Example: select * from Student where name="Anju"; </p>
+            </div>
+            <h3>Query For Selecting columns from Table</h3>
+            <br />
+            <div class="bg-success">
+            <p>select column1,column2... from TableName;</p>
+            <p> Example: select name,age from Student; </p>
+            </div>
+            <h3>Query For Selecting Particular rows and columns of Table </h3>
+            <br />
+            <div class="bg-success">
+            <p>select column1,column2 from TableName where condition;</p>
+            <p> Example: select name,age from Student where name="salini"; </p>
+            </div>
+            <h3>UPDATE</h3>
+             <p>Query For making changes in the data of the  Table</p>
+            <br />
+            <div class="bg-success">
+                 <p> Update TableName set Fieldname='newvalue' where condition; </p>
+            <p>update student set Name='Manju' where id=1;</p>
+           
+            </div>
+            <h3>ALTER</h3>
+            <p>Query For making changes in the Table </p>
+            <br />
+            <div class="bg-success">
+            <p>alter table tablename add fieldname datatype</p>
+            <p> Example: alter table Student add place varchar(50); </p>
+            </div>
+            <h3>DELETE</h3>
+             <p>Query For deleting data in the  Table</p>
+            <br />
+            <div class="bg-success">
+                 <p> delete from TableName where condition; </p>
+            <p>delete from student where id=2;</p>
+            <p>delete name, age from student where id=2;</p>
+           
+            </div>
+            <h3>DROP</h3>
+             <p>Query For deleting the Table</p>
+            <br />
+            <div class="bg-success">
+                 <p> drop table TableName; </p>
+            <p>drop table student;</p>
+           
+           
+            </div>
+            <h3>IN and NOT IN </h3>
+            <br />
+            <div class="bg-success">
+            <p>select * from TableName where condition IN('');</p>
+            <p> Example: select * from Student where place IN="Kerala"; </p>
+             <p> Example: select * from Student where place NOT IN="Delhi"; </p>
+            </div>
+            <h3>LIKE Operator</h3>
+             
+            <br />
+            <div class="bg-success">
+                 <p> select * from student where name like 'a_%'; </p>
+                 <p>Here we are searching for the first character in the name starting with 'a'</p>
+           
+           
+            </div>
+             <h3>ORDER BY</h3>
+             
+            <br />
+            <div class="bg-success">
+                 <p> select * from student order by name asc; </p>
+                 <p> select * from student order by name desc; </p>
+           
+           
+            </div>
+            </div>
+            </div>

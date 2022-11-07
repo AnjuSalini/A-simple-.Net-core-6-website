@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewData["Title"] = "Netcore";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ <br/>
+    <br/>
+<div class="row">
+    
+    
+    
+    <!--ABOUT SECTION -->
+    <div id="about-section" >
+        <div class="container" >
+             <div class="row main-top-margin text-center" >
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <h1>.NET Core</h1>
+                    <h4>
+                        
+                      .NET Core is a free, open source(freely available and may be redistributed and modified) and cross-platform(to be used on different types of computers or with different software packages) framework developed by microsoft.
+                           
+                    </h4>
+                </div>
+            </div>
+            <!-- ./ Main Heading-->
+            <hr />
+            <div class="row main-low-margin text-center">
+                <div class="col-md-3 col-sm-12" >
+                    <img class="img-circle" src="/img/netcorep.jpg" alt="" height="250" width="250">
+                    
+                   
+                </div>
+             
+                <div class="col-md-7 col-sm-12 col-md-offset-1  text-justify" >
+                    <h3> Latest Version</h3>
+                    <p>
+                        .NET CORE 7 is the latest version available but it is in the preview mode
+                        .NET CORE 6 is the latest stable version available.
+
+                    </p>
+                    <p>
+                         In order to work with .NET CORE we need an IDE and MS-SQL database. For that we use Visual Studio 2022 and SQL SERVER 2019
+
+                    </p>
+                    <p>
+                         Visual Studio 2022 community edition is a free microsoft's IDE which we can download from microsoft's website.
+                          We can download SQL SERVER 2019 for free from microsoft's website and  we need
+                         SQL SERVER MANAGEMENT STUDIO which also we can download for free .
+
+
+                    </p>
+                </div>
+
+                <div class="col-md-12 col-sm-12 text-justify" >
+                    <h3> .NET CORE MVC</h3>
+                    <p>MVC stands for Model, View and Controller. </p>
+                      <p> What is a Model?</p>
+                      <p> It is a class which consist of all the properties required for a table in the database.
+                       The properties which we created in the Model class will be the fields of the table. For example ,
+                       we have the property called name or email in the model class which will represent the fields of the table such as name and email. 
+                       So we can say that a model class can be used to create a table in the database, store data in the database and retrieve data from database if needed.
+                       All model classes created are kept inside the Models folder</p>
+                      <p> What is a View?</p>
+                      <p> View is the user interface. It is the webpage of the website through which user can interact. 
+                          All Created views are stored inside the views folder</p>
+                       <p>What is a Controller?
+
+                    </p>
+                     <h4> .NET CORE RAZOR PAGES</h4>
+                    <p>
+                        
+                         We can create server side web applications using Razor Pages instead of using MVC. 
+                         Razor Page consist of a .cs file for each page. For example we we have a view called index is created. 
+                         Then we have Index.cs file also. This file is looks similar to code behind file of traditional ASP.NET Webforms but it's entirely rewritten.
+                    </p>
+                </div>
+            </div>
+              <!-- ./ Row Content-->
+
+                        
+                
+        </div>
+        </div>
+    </div>
+    <!-- END ABOUT SECTION -->
+    <div class="row">
+    <h3>How to create a project in .NET CORE MVC</h3>
+    <br />
+    <br/>
+    <br />
+    <br/>
+    <p>Step 1: Open Visual Studio and select Create a new project.</p>
+    <br />
+    <br/>
+
+
+<img src="/img/2.jpg" / >
+<p>Step 2: Create a new project dialog box appears, from that select ASP.NET Core Web App (Model-View-Controller) -> Next.</p>
+<p>Step 3: In the Configure your new project dialog box, enter a desired project name. </p>
+<p>Step 4: Select Next.<p/>
+<p>Step 5: From Additional information dialog box, select .NET 6.0 .</p>
+<p>Step 6: Click on Create button.</p>
+<h3>How to Run an Application</h3>
+<br />
+<br/>
+<p> Select either WebApplication1(given Project name) or IIS Express</p>
+<img src="/img/runappscreen.jpg" />
+    <div class="container">
+  
+  <ul class="pagination">
+    <li><a asp-controller="home" asp-action="Netcore">1</a></li>
+    <li><a asp-controller="home" asp-action="Netcore2">2</a></li>
+    <li><a asp-controller="home" asp-action="Netcore4">3</a></li>
+    <li><a asp-controller="home" asp-action="Netcore3">4</a></li>
+    
+  </ul>
+</div>
+         
+        </div>
+       
+

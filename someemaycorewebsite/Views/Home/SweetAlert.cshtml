@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "SweetAlert";
+}
+
+
+<html>
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body style="font-family: sans-serif; ">
+   
+   <br/>
+   <br/>
+    <div class="container">
+  
+
+  <div class="row">
+       <div class="row main-top-margin text-center" >
+                 <h1>How To Use Sweet Alerts</h1>
+                 <br />
+                 <br />
+                  <br />
+                 <br />
+                <h3>Let's see how to create and use sweet alert.</h3>
+                <br />
+                 <br />
+                 <br />
+                <p>Sweet alerts are similar to traditional javascript alerts but the difference is sweet alerts are more visually attractive that ordinary alerts.
+                    </p>
+                    <p>For using Sweet alert in .NET CORE MVC, create a controller and write a function. Then create corresponding view for that. </p>
+                    <p>Inside the View Just copy and paste the below code. We can use different type of sweet alerts from internet</p>
+                   
+                <br />
+                 <br />
+            </div>
+    <div class="col-sm-6" style="background-color:lightgreen;">
+        <div style="height: 50px;">
+    <button onclick="fireSweetAlert()">Run Example</button>
+  </div>
+  <script>
+
+    function fireSweetAlert() {
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+        )
+    }
+
+  </script>
+        <h1>Alert for Success</h1>
+       <code>
+       <p>
+&lt; html &gt;</p>
+<p>
+&lt;head&gt
+</p>
+<p>
+  &lt;script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"&gt;</p>
+  <p>&lt;/script&gt;
+  </p>
+  <p>
+&lt;/head&gt
+</p>
+<p>
+&lt;body style="font-family: sans-serif; "&gt
+</p>
+<p>
+  &lt;div style="height: 500px;"&gt
+  </p>
+  <p>
+    &lt;button onclick="mySweetAlert()"&gtRun Example&lt;/button&gt</p>
+    <p>
+  &lt;/div&gt</p>
+  <p>
+  &lt;script&gt</p>
+  <p>
+
+    function mySweetAlert() {</p>
+       <p> Swal.fire(</p>
+          <p>  'Good job!',</p>
+          <p>  'You clicked the button!',</p>
+          <p>  'success'</p>
+       <p> )
+    }</p>
+    
+   <p>
+  &lt;/script&gt
+</p>
+  <p>
+&lt;/body&gt
+</p>
+<p>
+&lt;/html&gt
+</p>
+<p>&lt;</p>
+</code>
+     
+ </div>
+    <div class="col-sm-6" style="background-color:lightpink;">
+  <script>
+     function fireAlert() {
+     Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+}) 
+     }
+</script>
+<div style="height: 50px;">
+    <button onclick="fireAlert()">Run Example </button>
+  </div>
+         <h1>Alert for Error</h1>
+       <code>
+       <p>
+&lt; html &gt;</p>
+<p>
+&lt;head&gt
+</p>
+<p>
+  &lt;script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"&gt;</p>
+  <p>&lt;/script&gt;
+  </p>
+  <p>
+&lt;/head&gt
+</p>
+<p>
+&lt;body style="font-family: sans-serif; "&gt
+</p>
+<p>
+  &lt;div style="height: 500px;"&gt
+  </p>
+  <p>
+    &lt;button onclick="fireAlert()"&gtRun Example&lt;/button&gt</p>
+    <p>
+  &lt;/div&gt</p>
+  <p>
+  &lt;script&gt</p>
+  <p>
+
+    function fireAlert() {</p>
+       <p> Swal.fire({</p>
+          <p>  icon: 'error',</p>
+          <p>  title: 'Oops...',</p>
+          <p>  text: 'Something went wrong!',</p><p>footer: '&lt; href="">Why do I have this issue?&gt;'</p>
+       <p> )
+    }</p>
+    
+   <p>
+  &lt;/script&gt
+</p>
+  <p>
+&lt;/body&gt
+</p>
+<p>
+&lt;/html&gt
+</p>
+
+</code>
+    </div>
+  </div>
+</div>
+    
+   <br />
+                 <br /> <br />
+                 <br />
+  
+</body>
+</html>
+
